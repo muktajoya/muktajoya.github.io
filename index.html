@@ -1,92 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- linking CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-     <!-- linking CSS fontAwesome -->
-     <link rel="stylesheet" href="./css/font-awesome.min.css">
-    <!-- linking google-fonts CSS --> 
-   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-   
-    <!-- link bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-
-    <title>Portfolio | Home</title>
-</head>
-<body class="bg-dark mb-4">
-    <div class="container text-center">
-        <h1 class="fs-1 fw-bold text-white mt-1">Hello I'm Mukta</h1>
-        <p class="text-white">I am a Master's student in Data Science at TU Dortmund. I have expertice on JAVA OOP, Python, React JS, RESTful API, Kotlin, Git, LLM, Transformer, data analysis. I am interested in data analysis and visualization,
-             Machine learning. Here I have shown some of my previous projects done at my previous workplace. </p>
-    </div>
-    <div >
-       <div class="row m-5 justify-content-center">
-        <p class="text-white">Fraunhofer ISST (Nov 2022 - March 2023)</p>
-        <div class="col-4">
-            <div class="card-group">
-                <div class="card small" style=" margin-left:50px;margin-right:30px">
-                    <img class="displayed"  src="./css/images/faunhofer.png" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
-                    <div class="card-body card-background">
-                        <h5 class="card-title">DataSpace Components</h5>
-                        <p class="card-text">Dataspace Connector is a framework or main component for exchanging inter-organizational data with sovereignty. It will implement the International Data Spaces standard (IDS).</p>
-                        <a class="btn btn-dark" href="https://github.com/FraunhoferISST" role="button">Link</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-           <div class="col-4">
-               <div class="card-group">
-                   <div class="card small" style=" margin-left:50px;margin-right:30px">
-                       <img class="displayed"  src="./css/images/edc.png" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
-                       <div class="card-body card-background">
-                           <h5 class="card-title">Eclipse Dataspace Components</h5>
-                           <p class="card-text">The Eclipse Dataspace Connector will implement the International Data Spaces standard (IDS) as well as relevant protocols and requirements associated with GAIA-X.</p>
-                           <a class="btn btn-dark" href="https://github.com/eclipse-edc" role="button">Link</a>
-                       </div>
-                   </div>
-               </div>
-           </div>
-    </div>
-
-    </div>
-        <div class="row m-5 justify-content-center">
-            <p class="text-white">Netzlab GmbH (Nov 2021-August 2022)</p>
-            <div class="col-4">
-                <div class="card-group">
-                    <div class="card small" style=" margin-left:50px;margin-right:30px">
-                      <img class="displayed"  src="./css/images/statistics_golf.PNG" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
-                      <div class="card-body card-background">
-                        <h5 class="card-title">Statistical Scorecard(Admin)</h5>
-                        <h6>Technology Used:</h6>
-                            <p>ReactJS, CSS, HTML, bootstrap, API, C#</p>
-                        <p class="card-text">Show golf player's scores who play in mini and full rounds with all variants and balls with selected
-                            bahn systems. With different types of statistics and filter, show scores for definite time period
-                            through statistical table.</p>
-                        <a class="btn btn-dark" href="https://github.com/muktajoya/Statistical-Scorecard" role="button">Link</a>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card small" style="margin-left:50px; margin-right:30px">
-                    <img class="displayed"  src="./css/images/gardify_2.png" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
-                        <div class="card-body card-background">
-                            <h5 class="card-title">Gardify</h5>
-                            <h6>Technology Used:</h6>
-                            <p>Java, Kotlin, Android SDK,  Restful API</p>
-                            <p class="card-text">Gardify is an useful tool for both novice and experienced gardeners alike. The scientifically tested plant knowledge and the care steps for already around 4800 garden plants are freely accessible with 2 version of this application.                                                                  
-                            </p>
-                            <a class="btn btn-dark" href="https://play.google.com/store/apps/details?id=com.gardify.android&hl=en" role="button">Google play store link</a>
-                        </div>
-                </div>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+             <!-- linking CSS -->
+            <link rel="stylesheet" type="text/css" href="./css/style.css">
+             <!-- linking CSS fontAwesome -->
+             <link rel="stylesheet" href="./css/font-awesome.min.css">
+            <!-- linking google-fonts CSS --> 
+           <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
            
-        </div>
-    </div>     
-        <div class="row m-5">
+            <!-- link bootstrap -->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+        
+        <style>
+        * {box-sizing: border-box}
+        
+        /* Set height of body and the document to 100% */
+        body, html {
+          
+          margin: 0;
+          font-family: Arial;
+        }
+        
+        /* Style tab links */
+        .tablink {
+          background-color: #555;
+          color: white;
+          float: left;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          padding: 14px 16px;
+          font-size: 17px;
+          width: 25%;
+        }
+        
+        .tablink:hover {
+          background-color: #777;
+        }
+        
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+          color: black;
+          display: none;
+          padding: 100px 20px;
+          height: 100%;
+        }
+        
+        #Home {background-color: black;}
+        #News {background-color: black;}
+        #Contact {background-color: lightskyblue;}
+        #About {background-color: lightskyblue;}
+        </style>
+        </head>
+        <body class="bg-dark mb-4"> 
+        
+          <button class="tablink" onclick="openPage('News', this, 'gray')" id="defaultOpen">ML Projects</button>
+        <button class="tablink" onclick="openPage('Home', this, 'gray')">Professional Projects</button>
+        <button class="tablink" onclick="openPage('Contact', this, 'gray')">Contact</button>
+        <button class="tablink" onclick="openPage('About', this, 'gray')">About</button>
+        
+        <div id="Home" class="tabcontent">
+        
+          <h3 class="container text-center">Professional Projects Overview</h3>
+          <div >
+            <div class="row m-5 justify-content-center">
+             <p class="text-white">Fraunhofer ISST (Nov 2022 - March 2023)</p>
+             <div class="col-4">
+                 <div class="card-group">
+                     <div class="card small" style=" margin-left:50px;margin-right:30px">
+                         <img class="displayed"  src="./css/images/faunhofer.png" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
+                         <div class="card-body card-background">
+                             <h5 class="card-title">DataSpace Components</h5>
+                             <p class="card-text">Dataspace Connector is a framework or main component for exchanging inter-organizational data with sovereignty. It will implement the International Data Spaces standard (IDS).</p>
+                             <a class="btn btn-dark" href="https://github.com/FraunhoferISST" role="button">Link</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+                <div class="col-4">
+                    <div class="card-group">
+                        <div class="card small" style=" margin-left:50px;margin-right:30px">
+                            <img class="displayed"  src="./css/images/edc.png" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
+                            <div class="card-body card-background">
+                                <h5 class="card-title">Eclipse Dataspace Components</h5>
+                                <p class="card-text">The Eclipse Dataspace Connector will implement the International Data Spaces standard (IDS) as well as relevant protocols and requirements associated with GAIA-X.</p>
+                                <a class="btn btn-dark" href="https://github.com/eclipse-edc" role="button">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+         </div>
+        
+          </div>
+          <div class="row m-5 justify-content-center">
+                    <p class="text-white">Netzlab GmbH (Nov 2021-August 2022)</p>
+                    <div class="col-4">
+                        <div class="card-group">
+                            <div class="card small" style=" margin-left:50px;margin-right:30px">
+                              <img class="displayed"  src="./css/images/statistics_golf.PNG" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
+                              <div class="card-body card-background">
+                                <h5 class="card-title">Statistical Scorecard(Admin)</h5>
+                                <h6>Technology Used:</h6>
+                                    <p>ReactJS, CSS, HTML, bootstrap, API, C#</p>
+                                <p class="card-text">Show golf player's scores who played in mini and full rounds with all variants and balls with selected
+                                    bahn systems. Show player's scores in  five different Data Tables for a definite time period and selective different filters.</p>
+                                <a class="btn btn-dark" href="https://github.com/muktajoya/Statistical-Scorecard" role="button"> Report Github Link</a>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card small" style="margin-left:50px; margin-right:30px">
+                            <img class="displayed"  src="./css/images/gardify_2.png" style="width:70%; height:200px; border-radius: 15px; align-items: center;" alt="...">
+                                <div class="card-body card-background">
+                                    <h5 class="card-title">Gardify</h5>
+                                    <h6>Technology Used:</h6>
+                                    <p>Java, Kotlin, Android SDK,  Restful API</p>
+                                    <p class="card-text">Gardify is an useful tool for both novice and experienced gardeners alike. The scientifically tested plant knowledge and the care steps for already around 4800 garden plants are freely accessible with 2 version of this application.                                                                  
+                                    </p>
+                                    <a class="btn btn-dark" href="https://play.google.com/store/apps/details?id=com.gardify.android&hl=en" role="button">Google play store link</a>
+                                </div>
+                        </div>
+                   
+                </div>
+          </div> 
+          <div class="row m-5">
             <p class="text-white">Walton Digi-tech Industries Limited (Dec 2018- August 2021)</p>
             <div class="col-4">
                 <div class="card-group">
@@ -96,7 +138,7 @@
                           <h5 class="card-title">Brand Outlet Monitoring</h5>
                           <h6>Technology Used:</h6>
                             <p>REST API, Retrofit 2, JAVA with android SDK.</p>           
-
+        
                           <p class="card-text">This app is a convenient way for Branding & Sales department and retailers to promote Walton
                             Brand. Retailers generate report by this app and send it to server. Branding and Sales team also able to
                             analyze retailer's report by this application.</p>
@@ -168,7 +210,7 @@
                 </div>
             </div>
             
-
+        
             <!-- <div class="row m-5 justify-content-center">
                 <p class="text-white">Undergraduate Project (2017-2018)</p>
                 <div class="col-4">
@@ -194,36 +236,160 @@
                 </div>
            
         </div>   -->
+          </div>
+        
         </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <!-- <div class="col-md-6">
-                <div class="info">
-                    <ul>
-                        <li>
-                            <a href="#" class=""><i class="fa fa-envelope-o"></i>muktaghosh116@gmail.com</a>
-                        </li>
-                         <li>
-                            <a href="#"><i class="fa fa-mobile"></i>+4915751615501</a>
-                        </li>
-                    </ul>
+        
+        <div id="News" class="tabcontent">
+          <h3 class="container text-center">ML Projects</h3>
+          <div>
+           
+            <div >
+                <div style="width: 100%; margin-bottom: 10px;" >
+                    <div class="card" >               
+                        <div class="card-body">
+                          <h5 class="card-title">Text Classification</h5>
+                          <h6>Technology Used:   PyTorch, Transformer model, Huggingface, Finetuning, Google Colab</h6>
+                                
+                          <p class="card-text">Finetune the Transformer model 'DistilBERT' on the preprocessed IMDb dataset ,
+                             then inference on a new dataset by using this fine-tuned model with the help of Pipeline.</p>
+                          <a class="btn btn-dark" href="https://github.com/muktajoya/TextClassification" role="button">GitHub link</a>
+                          <a class="btn btn-dark" href="https://huggingface.co/MuktaGhosh/my_awesome_model/tree/main" role="button">Finetuned model link</a>
+                          
+                        </div>
+                    </div>
                 </div>
-            </div> -->
-            <div class="col-md-6">
-                <div class="social-icons">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/muktajoya"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/mukta-ghosh-212878148/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                        </li>
-                    </ul>
+                <div style="width: 100%; margin-bottom: 10px;" >
+                  <div class="card" >               
+                      <div class="card-body card-background">
+                        <h5 class="card-title">Pipeline for Inference on Dataset</h5>
+                        <h6>Technology Used: Huggingface Transformer, Pipeline, Google Colab</h6>        
+                        <p class="card-text">Using a task specific model from Huggingface Hub, inferencing on dataset. 
+                          Here mainly focused on to ready a pipeline. </p>
+                        <a class="btn btn-dark" href="https://github.com/muktajoya/InferencePipeline_Huggingface" role="button">Github link</a>
+                      </div>
+                  </div>
+              </div>
+              <div style="width: 100%; margin-bottom: 20px;" >
+                <div class="card" >               
+                    <div class="card-body ">
+                      <h5 class="card-title">Classification Methods (SVM, Decision Tree, Random Forest)</h5>
+                      <h6>Technology Used: R language, R Studio</h6>        
+                      <p class="card-text">Compared accuracy of training a model with Different classification methods 
+                        (SVM, classification tree , Random Forest) vs respective 10 fold Cross validation. </p>
+                      <a class="btn btn-dark" href="https://github.com/muktajoya/ClassificationMethods/tree/main" role="button">Github link</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="text">
+              <p style="color:lightskyblue;">Data analysis and Visualization</p>
+            </div>
+            <div style="width: 100%; margin-bottom: 10px;" >
+              <div class="card" >               
+                  <div class="card-body card-background">
+                    <h5 class="card-title">Dataset Analysis and visualization</h5>
+                    <h6>Technology Used: Python, numpy, pasdas, dataframe, matplotLib, regression, webScrapping</h6>        
+                    <p class="card-text"> Analysis 2 dataset for different analysis and visualize with Barchart, pie plot, scatter plot. </p>
+                    <a class="btn btn-dark" href="https://github.com/muktajoya/Data_Analysis_Visualization" role="button">Github link</a>
+                  </div>
+              </div>
+          </div>
+        
+              <div class="text">
+                <p style="color:lightskyblue;">LangChain Framework with Prompt Engineering</p>
+              </div>
+                <div style="width: 100%; margin-bottom: 10px;" >
+                  <div class="card" >               
+                      <div class="card-body">
+                        <h5 class="card-title">Semantic Search With LangChain Framework</h5>
+                        <h6>Technology Used: Python, ElasticVector Search, LangChain, huggingface-pipeline, LLMChain, Prompt Template</h6>        
+                        <p class="card-text">A big dataset divided into chunks and extent to vector embedding.  
+                          Elasticsearch is queried to find the semantically closest chunk to a specific question. For more details follow Github ReadMe file.</p>
+                        <a class="btn btn-dark" href="https://github.com/muktajoya/SemanticSearchLangChain" role="button">Github link</a>
+                      </div>
+                  </div>
+              </div>
+              <div style="width: 100%; margin-bottom: 10px;" >
+                <div class="card" >               
+                    <div class="card-body card-background">
+                      <h5 class="card-title">ChatBot</h5>
+                      <h6>Technology Used: Python, LangChain, huggingface-hub, LLMChain, Prompt Template</h6>        
+                      <p class="card-text"> A Chatbot with HuggingFace transformer and prompt Templates using LangChain framework</p>
+                      <a class="btn btn-dark" href="https://github.com/muktajoya/LangChainChatbot" role="button">Github link</a>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%; margin-bottom: 20px;" >
+              <div class="card" >               
+                  <div class="card-body ">
+                    <h5 class="card-title">QuestionAnswering on Documents</h5>
+                    <h6>Technology Used: Python, LangChain, huggingface-hub, LLMChain, Prompt Template, sentence-transformer, jupyter Notebook</h6>        
+                    <p class="card-text"> QA on documents with Hugging Face LLM and prompt Templates using LangChain framework.</p>
+                    <a class="btn btn-dark" href="https://github.com/muktajoya/Question-AnsweringOnDocuments" role="button">Github link</a>
+                  </div>
+              </div>
+          </div>
+        
+          <div class="text">
+            <p style="color:lightskyblue;">Image Processing</p>
+          </div>
+          <div style="width: 100%; margin-bottom: 10px;" >
+            <div class="card" >               
+                <div class="card-body card-background">
+                  <h5 class="card-title">Real Time Object Detection</h5>
+                  <h6>Technology Used: PyCharm,, Python, openCV,  Pretrained model, YoloV3 (object detecion algorithom)</h6>        
+                  <p class="card-text"> Real time object detection using OpenCV's pretrained model yolov3 . (faster)</p>
+                  <a class="btn btn-dark" href="https://github.com/muktajoya/RealTimeObjectDetection" role="button">Github link</a>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://use.fontawesome.com/5e25c641f5.js"></script>
-</body>
+            </div>
+            
+          
+           
+           
+          
+          
+          </div>
+        </div>
+        
+        <div id="Contact" class="tabcontent">
+          <h3>Contact</h3>
+          <p>If you are interested in connecting with me, please don't hesitate to reach out.</p>
+          <p><a  href="https://github.com/muktajoya?tab=repositories" role="link">Github Link</a></p>
+          <p><a  href="https://www.linkedin.com/in/mukta-ghosh-212878148/" role="link">Linkedin</a></p>
+          <p><a  href="muktaghosh116@gmail.com" role="link">Gmail</a></p>
+          <a  href="mukta.ghosh@tu-dortmund.de" role="link"> University mail</a>
+        </div>
+        
+        <div id="About" class="tabcontent">
+          <h3>About Me</h3>
+          <p class="text-black">I am a Master's student in Data Science at TU Dortmund. My interest broadly span the field of Machine Learning and Software Engineering. 
+            I have 4 years of expertise in the industry of Software development, Integration, Validation, Testing, and Deployment. 
+            My ultimate goal is to combine my skills in data science and programming to create something truly impactful and meaningful.
+              
+             </p>
+        </div>
+        
+        <script>
+        function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+        
+        </body>
 </html>
