@@ -58,10 +58,11 @@
         </head>
         <body class="bg-dark mb-4"> 
         
-          <button class="tablink" onclick="openPage('News', this, 'gray')" id="defaultOpen">ML Projects</button>
-        <button class="tablink" onclick="openPage('Home', this, 'gray')">Professional Projects</button>
-        <button class="tablink" onclick="openPage('Contact', this, 'gray')">Contact</button>
-        <button class="tablink" onclick="openPage('About', this, 'gray')">About</button>
+          
+         <button class="tablink" onclick="openPage('News', this, 'gray', 'mlproject')" id="defaultOpen">ML Projects</button>
+         <button class="tablink" onclick="openPage('Home', this, 'gray', 'professionalproject')">Professional Projects</button>
+         <button class="tablink" onclick="openPage('Contact', this, 'gray', 'contact')">Contact</button>
+         <button class="tablink" onclick="openPage('About', this, 'gray', 'about')">About</button>
         
         <div id="Home" class="tabcontent">
         
@@ -445,23 +446,42 @@
         </div>
         
         <script>
-        function openPage(pageName,elmnt,color) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
+                function openPage(pageName, elmnt, color, hash) {
+            var i, tabcontent, tablinks;
+
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+            }
+
+            document.getElementById(pageName).style.display = "block";
+            elmnt.style.backgroundColor = color;
+
+            // ✅ update URL
+            window.location.hash = hash;
           }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].style.backgroundColor = "";
-          }
-          document.getElementById(pageName).style.display = "block";
-          elmnt.style.backgroundColor = color;
-        }
         
         
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
+
+                window.onload = function () {
+            const hash = window.location.hash.replace("#", "");
+
+            const map = {
+              mlproject: "News",
+              professionalproject: "Home",
+              contact: "Contact",
+              about: "About"
+            };
+
+            const page = map[hash] || "News";
+
+            document.querySelector(`.tablink[onclick*="${page}"]`)?.click();
+          };
         </script>
         
         </body>
